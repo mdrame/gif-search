@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def func():
-    return render_template('index.html') # render_template not working
+    return render_template('index.html') # render_template() added our external html file found in the template folder of the same folder
 
 
 
