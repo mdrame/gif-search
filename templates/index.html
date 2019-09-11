@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <head>
     <title>Gif Search 🕵🏾‍♀️</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename="styles/mainpage.css")}}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename="styles/mainpage.css")}}"> <!--- static/mainpage.css: static refers to the folder mainpage.css is in--->
 </head>
 <body style="width: 880px; margin: auto;">
-        <h1>Mohammed & Mo Gif Home Work </h1>
+
+        <h1 class="header"> Mohammed & Mo Gif Home Work </h1>
 
 
 
         <form action="/action_page.php">
-            Search : <input type="text" name="firstname" value="Mickey">
+            Search : <input type="text" name="search">
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" name="submit">
         </form>
 
+        <!--- Test Code under here --->
+
+        {% if search == "Cat" %}
+            word user entered is {{gif_json}}
+        {% else %}
+            sorry user enter some other word! not {{ search }}
+        {% endif %}
+
+
         <br>
 
-        <h1> GIF CSS TEST </h1>
+        
         <br>
+
+
 
 
         <img src="https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif" alt="NY">
         <img src="https://techcrunch.com/wp-content/uploads/2015/08/safe_image.gif" alt="NY">
         <img src="https://d33wubrfki0l68.cloudfront.net/5a77be3f6486df63f3683262c87f1179fce103f3/34335/static/blog/posts/how-to-create-high-quality-gifs/cover.gif" alt="NY">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/200px-Rotating_earth_%28large%29.gif" alt="NY">
-        
+
 </body>
