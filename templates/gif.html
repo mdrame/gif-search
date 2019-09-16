@@ -8,9 +8,12 @@
 </head>
 <body>
 
+        {% for gif in gif_list %}
 
+        <img src="{{ gif['media'][0]['gif']['url'] }}">
 
-    <p> {{ gif}} </p>
+        {% endfor %}
+
 
 
 </body>

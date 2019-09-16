@@ -27,23 +27,29 @@ def gifFunc():
 
 
    # TODO: Make 'params' dict with query term and API key
-   params = {"url": 'https://api.tenor.com/v1/', "query": user_Input,"key": "SNXP25MEWK1E", "limit": 1}
+   params = {"url": 'https://api.tenor.com/v1/', "query": user_Input,"key": "SNXP25MEWK1E", "limit": 10}
 
 #testing API url
 # curl "https://api.tenor.com/v1/search?q=query&key=SNXP25MEWK1E&limit=1"
 
    # TODO: Make an API call to Tenor using the 'requests' library
    api_requesting = requests.get(f"{params['url']}search?q={params['query']}&key={params['key']}&limit={params['limit']}")
-                                #
-   api_results = api_requesting.json()
+   #gifs = api_requesting.json()
+
    # TODO: Get the first 10 results from the search results
-   gif = api_results['results'][0]['media'][0]['gif']['url']
+   if api_requesting.status_code == 200:
+       gif_list = json.loads(api_requesting.content)['results']
+       #print(gif_List )
+       #gifs['results'][0]['media'][0]['gif']['url']
+   else:
+       gif_list = [] #an empty list.
+
+
 
 
    # TODO: Render the 'index.html' template, passing the gifs as a named parameter
 
-   return render_template("gif.html", gif=gif)
-
+   return render_template("gif.html", gif_list=gif_list)
 
 if __name__ == "__main__":
     app.run(debug=True)
