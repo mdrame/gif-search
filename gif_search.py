@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request
+from flask import Flask, render_template, request
 import requests
 import json
 
@@ -16,8 +16,19 @@ gif_List = list()
 def func():
 
  # render_template() added our external html file found in the template folder of the same folder
-    return render_template('index.html')
+    return render_template("index.html")
 
+@app.route('/legal')
+def legal():
+
+ # render_template() added our external html file found in the template folder of the same folder
+    return render_template("legal.html")
+
+@app.route('/about')
+def about():
+
+ # render_template() added our external html file found in the template folder of the same folder
+    return render_template("about.html")
 
 @app.route('/gif')
 def gifFunc():
@@ -49,7 +60,7 @@ def gifFunc():
 
    # TODO: Render the 'index.html' template, passing the gifs as a named parameter
 
-   return render_template("gif.html", gif_list=gif_list)
+   return render_template("gif.html", gif_list=gif_list, user_Input=user_Input)
 
 if __name__ == "__main__":
     app.run(debug=True)
