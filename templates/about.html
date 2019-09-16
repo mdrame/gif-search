@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Gif Searcher 2000TI</title>
+    <title>Gif Searcher</title>
     <link rel="stylesheet" href="{{ url_for('static', filename="styles/css/bootstrap.min.css")}}">
-    <link rel="stylesheet" type="text/css" href="styles/mainpage.css">
-    <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="styles/css/bootstrap.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="styles/mainpage.css")}}"">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
 </head>
 
 <header>
     <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand">Gif Seacher 5000TI</a>
-        <form class="form-inline" action="/action_page.php">
-            <input class="form-control mr-sm-2" type="text" name="firstname" value="Mickey" placeholder="Search" aria-label="Search">
-            <button class="btn btn-dark my-2 my-sm-0" type="submit" value="Submit"><i class="fas fa-search"></i></button>
+        <a class="navbar-brand">Gif Seacher</a>
+        <form class="form-inline" action="gif">
+            
+            <input class="form-control mr-sm-2" type="text" name="search" value="" placeholder="Search" aria-label="Search">
+
+            <button class="btn btn-dark my-2 my-sm-0" type="submit" name="submit" value="Submit"><i class="fas fa-search"></i></button>
         </form>
     </nav>
 </header>
@@ -32,22 +34,21 @@
     </div>
 
 </body>
-
 <footer>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="legal.html">Legal</a>
+                    <a class="nav-link" href="legal">Legal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Github <i class="fab fa-github"></i></a>
+                    <a class="nav-link" href="https://github.com/apologeticaly/gif-search" target="_blank">Github <i class="fab fa-github"></i></a>
                 </li>
             </ul>
             <div class="navbar-collapse collapse order-3 dual-collapse2">
@@ -58,7 +59,7 @@
         </div>
     </nav>
 </footer>
-
+</html>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
