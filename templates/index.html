@@ -12,7 +12,7 @@
 
 
 
-        <form action="results.html">
+        <form action="gif">
             Search : <input type="text" name="search">
 
                      <input type="submit" name="submit"/>
@@ -24,15 +24,10 @@
         <br>
 
 
-        <p> {{  gif }} </p>
+        <p> {{gif}} </p>
 
         <!--- Test Code under here --->
 
-        {% if search == "Cat" %}
-            word user entered is {{gif_json}}
-        {% else %}
-            sorry user enter some other word! not {{ search }}
-        {% endif %}
 
 
         <br>
