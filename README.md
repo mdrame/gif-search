@@ -1,12 +1,11 @@
 # Gif Search
 
-![preview](preview.gif)
-
 ![python3-image]
 ![MIT]
+![preview](preview.gif)
 
 
-The premise of the game is simple: you roll two dice. If you roll two of the same number you win! This program was written in Python3.
+This website is a giph search tool, allowing you to search for your favorite giphs! It was built using the Tenor API as well as Flask and Bootstrap. Happy searching!
 
 
 
