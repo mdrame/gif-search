@@ -1,14 +1,12 @@
 # Gif Search
 
-> A game in which you try to roll two of the same dice 
+![preview](preview.gif)
 
 ![python3-image]
 ![MIT]
 
 
 The premise of the game is simple: you roll two dice. If you roll two of the same number you win! This program was written in Python3.
-
-![](header.png)
 
 
 
@@ -29,6 +27,8 @@ pip3 install requests
 ```
 
 
+
+
 ## Usage
 
 Clone our repo and then run using
@@ -39,17 +39,18 @@ python3 gif-search.py
 
 
 
+
 ## Meta
 
 Distributed under the MIT license.
 
 Muhammed's Website - https://mconstantino.com
 
-[My Github](https://github.com/apologeticaly/)
+Muhammed's Github - https://github.com/apologeticaly/
 
 Mo's Channel - https://www.youtube.com/channel/UCBTVuaTf-Ui5qSgvrOnaqig
 
-[Mo's Github](https://github.com/mdrame)
+Mo's Github - https://github.com/mdrame
 
 
 <!-- Markdown link & img dfn's -->
