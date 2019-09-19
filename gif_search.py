@@ -62,5 +62,6 @@ def gifFunc():
 
    return render_template("gif.html", gif_list=gif_list, user_Input=user_Input)
 
+
 if __name__ == "__main__":
     app.run(debug=True)
